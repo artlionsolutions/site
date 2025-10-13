@@ -210,4 +210,5 @@ color: navy;
 	margin: 0 auto;
 	width: 80%;
 	background-color: blue;
+	height: -webkit-fill-available;
 }
