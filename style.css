@@ -172,6 +172,8 @@ a {
   position: relative;
   right: -100vw;
   transition: right .2s ease-out;
+  margin: 0;
+  height: 100vh;
 }
 
 
