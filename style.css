@@ -10,34 +10,6 @@ a {
 
 /* header */
 
-  .header{
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-	background-color: white;
-  }
-
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-  display: flex;
-}
-
-.header li a {
-  display: block;
-  padding: 20px 30px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
 
 .header .logo {
   display: block;
@@ -47,20 +19,87 @@ a {
   text-decoration: none;
 }
 
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+.header{
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+	background-color: white;
+  }
+  
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+}
+
 /* menu */
 
-  .header .menu {
+.header li a {
+  display: block;
+  padding: 20px 30px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .menu {
     clear: none;
     float: right;
     max-height: none;
 	right: 0;
   }
 
-/* menu icon */
 
 .header .menu-icon {
     display: none;
   }
+
+}
+
+/* 48em = 768px */
+
+@media screen and (max-width: 768px) {
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  background-color: white;
+}
+
+.header .menu-btn:checked ~ .menu {
+  position: relative;
+  right: 0;
+  top: -58px;
+  padding-top: 58px;
+  z-index: -1;
+  width: 100vw;
+}
+
+/* menu icon */
+
 
 .header .menu-icon .navicon {
   background: #333;
@@ -90,13 +129,6 @@ a {
   top: -5px;
 }
 
-/* menu btn */
-
-.header .menu-btn {
-  display: none;
-}
-
-
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
@@ -114,12 +146,8 @@ a {
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (max-width: 800px) {
-
 .header {
-  background-color: transparent;
+  background-color: unset;
   box-shadow: none;
   position: fixed;
   width: 100%;
@@ -128,10 +156,15 @@ a {
 
 .header ul {
 	display: block;
+	list-style: none;
+	padding-left: 0;
+	background-color: white;
 }
 
 .header li a {
   padding: 20px 30px;
+  display: block;
+  text-decoration: none;
 }
 
 .header .menu {
@@ -141,25 +174,6 @@ a {
   transition: right .2s ease-out;
 }
 
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-  background-color: white;
-}
-
-.header .menu-btn:checked ~ .menu {
-  position: relative;
-  right: 0;
-  top: -58px;
-  padding-top: 58px;
-  background-color: white;
-  z-index: -1;
-  width: 100vw;
-}
 
 }
 
