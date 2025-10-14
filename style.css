@@ -35,19 +35,19 @@ a {
 }
 
 .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-	right: 0;
-  }
+  clear: none;
+  float: right;
+  max-height: none;
+  right: 0;
+}
 
 .header .menu-btn {
   display: none;
 }
 
 .header .menu-icon {
-    display: none;
-  }
+  display: none;
+}
 
 .header li a {
   display: block;
@@ -122,7 +122,6 @@ a {
 }
 
 .header {
-  box-shadow: none;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -148,15 +147,15 @@ a {
 }
 
 .header ul {
-	display: block;
-	list-style: none;
-	padding-left: 0;
-	background-color: white;
-	height: -webkit-fill-available;
+  display: block;
+  list-style: none;
+  padding-left: 0;
+  background-color: white;
+  height: -webkit-fill-available;
 }
 
 .header li a {
-  padding: 20px 30px;
+  padding: 10px 20px;
   display: block;
   text-decoration: none;
 }
@@ -173,65 +172,52 @@ a {
 }
 
 #hero{
-	width: 100%;
-	background-color: rgb(247, 246, 249);
-	display: flex;
+  width: 100%;
+  background-color: rgb(247, 246, 249);
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  align-items: end;
 }
 
 #left_column{
-	width: 50%;
-	height: auto;
-	float:left;
-	padding: 50px;
+  height: auto;
+  float:left;
+  padding: 50px;
 }
 
 #h1{
 color: navy;
-    font-size: 38pt;
-    line-height: 42pt;
-    margin: 0;
-    margin-bottom: 20px;
+  font-size: 38pt;
+  line-height: 42pt;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 #h2{
-    color: grey;
-    font-size: 14pt;
-    margin: 0;
-    margin-bottom: 18px;
-    line-height: 22pt;
+  color: grey;
+  font-size: 14pt;
+  margin: 0;
+  margin-bottom: 18px;
+  line-height: 22pt;
 }
 
 #circle{
-	float: left;
-	width: 30px;
-	height: 30px;
-	background-color: rgb(28, 195, 135);
-	border-radius: 15px;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-	line-height: 30px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(28, 195, 135);
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  line-height: 30px;
 }
 #label{
-	color: rgb(28, 195, 135);
-	line-height: 30px;
-	vertical-align: middle;
-	float: left;
-	padding-left: 10px;
-}
-
-#right_column{
-	width: 50%;
-	height: auto;
-	float: left;
-	padding: 50px;
-	align-content: center;
-}
-
-#heroimg{
-	display: block;
-	margin: 0 auto;
-	width: 80%;
-	background-color: blue;
-	height: -webkit-fill-available;
+  color: rgb(28, 195, 135);
+  line-height: 30px;
+  vertical-align: middle;
+  float: left;
+  padding-left: 10px;
 }
