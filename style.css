@@ -175,8 +175,6 @@ a {
   width: 100%;
   background-color: rgb(247, 246, 249);
   display: flex;
-  position: fixed;
-  top: 0;
   height: 100vh;
   align-items: end;
 }
