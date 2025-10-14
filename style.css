@@ -11,8 +11,8 @@ a {
 /* header */
 
 .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: none;
+  box-shadow: none;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -50,8 +50,9 @@ a {
 
 .header .menu {
   clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+  position: relative;
+  right: -100vw;
+  transition: right .2s ease-out;
 }
 
 /* menu icon */
@@ -63,6 +64,7 @@ a {
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  background-color: white;
 }
 
 .header .menu-icon .navicon {
@@ -100,7 +102,12 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  position: relative;
+  right: 0;
+  top: -58px;
+  padding-top: 58px;
+  background-color: white;
+  z-index: -1;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -123,6 +130,13 @@ a {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
+  .header{
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+	background-color: white;
+  }
   .header li {
     float: left;
   }
@@ -133,6 +147,7 @@ a {
     clear: none;
     float: right;
     max-height: none;
+	right: 0;
   }
   .header .menu-icon {
     display: none;
