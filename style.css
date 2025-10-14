@@ -129,7 +129,7 @@ a {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media only screen and (min-width: 48em) {
   .header{
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
