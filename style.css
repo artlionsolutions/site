@@ -12,6 +12,7 @@ a {
 .header{
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
+	top: 0;
     width: 100%;
     z-index: 3;
 	background-color: white;
@@ -73,11 +74,10 @@ a {
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  background-color: white;
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: white;
   display: block;
   height: 2px;
   position: relative;
@@ -87,7 +87,7 @@ a {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: white;
   content: '';
   display: block;
   height: 100%;
@@ -110,10 +110,12 @@ a {
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
+  background: black;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
+  background: black;
 }
 
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
@@ -121,11 +123,17 @@ a {
   top: 0;
 }
 
+.header .menu-btn:checked ~ a{
+	color: unset;
+}
+
 .header {
-  position: fixed;
-  width: 100%;
-  z-index: 3;
   height: 58px;
+  background: unset;
+}
+
+.header .logo {
+	color: white;
 }
 
 .header .menu {
@@ -178,21 +186,21 @@ a {
 
 .container{
 	width: auto;
-	margin: 20px auto;
+	margin: 0 20px;
 }
 
 h1{
 	color: white;
-	font-size: 60px;
-	line-height: 60px;
+	font-size: 64px;
+	line-height: 64px;
 	float: left;
 	margin: 0;
 }
 
 h2{
 	color: white;
-	font-size: 30px;
-	line-height: 30px;
+	font-size: 32px;
+	line-height: 32px;
 	margin: 0;
 	float: left;
 }
