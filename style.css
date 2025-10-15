@@ -123,13 +123,13 @@ a {
   top: 0;
 }
 
-.header .menu-btn:checked ~ a{
-	color: unset;
+.header .menu-btn:checked ~ .logo{
+	color: blue;
 }
 
 .header {
   height: 58px;
-  background: unset;
+  background: blue;
 }
 
 .header .logo {
@@ -170,7 +170,6 @@ a {
 
 .hero{
 	width: 100vw;
-	height: 100vh;
 	position: absolute;
 	background-image: url("hero_img.jpg");
 	background-position: center;
@@ -182,6 +181,14 @@ a {
 	height: -webkit-fill-available;
 	align-items: end;
 	padding-bottom: 10vh;
+}
+.second{
+	width: 100vw;
+	height: -webkit-fill-available;
+	min-height: 100vh;
+	display: block;
+	position: relative;
+	top: 100vh;
 }
 
 .container{
