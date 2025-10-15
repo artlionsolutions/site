@@ -24,6 +24,7 @@ a {
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
+  color: blue;
 }
   
 .header ul {
@@ -60,6 +61,7 @@ a {
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #f4f4f4;
+  color: blue;
 }
 
 
