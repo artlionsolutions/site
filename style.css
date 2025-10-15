@@ -164,7 +164,6 @@ a {
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
-	top: -58px;
 	background-image: url("hero_img.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -193,7 +192,7 @@ h1{
 h2{
 	color: white;
 	font-size: 32px;
-	line-height: 64px;
+	line-height: 32px;
 	margin: 0;
 	float: left;
 }
