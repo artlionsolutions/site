@@ -160,4 +160,42 @@ a {
   text-decoration: none;
 }
 
+.hero{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: -58px;
+	background-image: url("hero_img.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgb(0, 0, 255, 0.5);
+	background-blend-mode: overlay;
+	display: flex;
+	height: -webkit-fill-available;
+	align-items: center;
+	align: center;
+}
+
+.container{
+	width: auto;
+	margin: 20px;
+}
+
+h1{
+	color: white;
+	font-size: 64px;
+	line-height: 64px;
+	float: left;
+	margin: 0;
+}
+
+h2{
+	color: white;
+	font-size: 32px;
+	line-height: 64px;
+	margin: 0;
+	float: left;
+}
+
 } /* Mobile view end */
