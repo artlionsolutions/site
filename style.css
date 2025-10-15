@@ -180,8 +180,8 @@ a {
 	background-blend-mode: overlay;
 	display: flex;
 	height: -webkit-fill-available;
-	align-items: center;
-	align: center;
+	align-items: end;
+	padding-bottom: 10vh;
 }
 
 .container{
@@ -200,7 +200,7 @@ h1{
 h2{
 	color: white;
 	font-size: 32px;
-	line-height: 32px;
+	line-height: 36px;
 	margin: 0;
 	float: left;
 }
